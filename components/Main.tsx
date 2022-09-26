@@ -1,6 +1,7 @@
-import { AiOutlineMail } from "react-icons/ai";
-import { BsFillPersonLinesFill } from "react-icons/bs";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { AiOutlineMail } from 'react-icons/ai';
+import { BsFillPersonLinesFill } from 'react-icons/bs';
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import Link from 'next/link';
 
 const Main = () => {
   return (
@@ -23,16 +24,24 @@ const Main = () => {
 
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <div className="p-6 rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110 ease-in duration-300">
-              <FaLinkedinIn />
+              <a href="https://www.linkedin.com/in/aaron-borgi-5744a7236/">
+                <FaLinkedinIn />
+              </a>
             </div>
             <div className="p-6 rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110 ease-in duration-300">
-              <FaGithub />
+              <a href="https://github.com/aaron47">
+                <FaGithub />
+              </a>
             </div>
             <div className="p-6 rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110 ease-in duration-300">
-              <AiOutlineMail />
+              <Link href="#contact">
+                <AiOutlineMail />
+              </Link>
             </div>
             <div className="p-6 rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110 ease-in duration-300">
-              <BsFillPersonLinesFill />
+              <Link href="#skills">
+                <BsFillPersonLinesFill />
+              </Link>
             </div>
           </div>
         </div>

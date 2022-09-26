@@ -10,7 +10,7 @@ const ProjectItem: React.FC<Props> = ({ project }) => {
   return (
     <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff]">
       <Image
-        className="rounded-xl group-hover:opacity-10"
+        className="rounded-xl group-hover:opacity-10 object-fill"
         src={`/../public/assets/projects/${project.name}.jpg`}
         alt="/"
         width={500}

@@ -1,10 +1,10 @@
-import { AiOutlineMail } from "react-icons/ai";
-import { BsFillPersonLinesFill } from "react-icons/bs";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import Link from "next/link";
-import { HiOutlineChevronDoubleUp } from "react-icons/hi";
-import emailjs from "@emailjs/browser";
-import { MutableRefObject, useRef } from "react";
+import { AiOutlineMail } from 'react-icons/ai';
+import { BsFillPersonLinesFill } from 'react-icons/bs';
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import Link from 'next/link';
+import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
+import emailjs from '@emailjs/browser';
+import { MutableRefObject, useRef } from 'react';
 
 function Contact() {
   const form = useRef<HTMLFormElement>() as MutableRefObject<HTMLFormElement>;
@@ -12,10 +12,10 @@ function Contact() {
   const sendEmail = (e: any) => {
     e.preventDefault();
     emailjs.sendForm(
-      "service_1y2ptv9",
-      "template_zra5k9q",
+      'service_1y2ptv9',
+      'template_zra5k9q',
       form.current,
-      "arBUKtdaXbgkzqZx8"
+      'arBUKtdaXbgkzqZx8'
     );
   };
 
@@ -50,16 +50,24 @@ function Contact() {
                 <p className="uppercase pt-8">Connect With Me</p>
                 <div className="flex items-center justify-between py-4">
                   <div className="p-6 rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110 ease-in duration-300">
-                    <FaLinkedinIn />
+                    <a href="https://www.linkedin.com/in/aaron-borgi-5744a7236/">
+                      <FaLinkedinIn />
+                    </a>
                   </div>
                   <div className="p-6 rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110 ease-in duration-300">
-                    <FaGithub />
+                    <a href="https://github.com/aaron47">
+                      <FaGithub />
+                    </a>
                   </div>
                   <div className="p-6 rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110 ease-in duration-300">
-                    <AiOutlineMail />
+                    <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfrtXFzzkBwZpcvXmLRswxRjJCkKDpBvTVfGqxnJjGrCzwJTHSwtJwjdFkVxhRsspsdPVV">
+                      <AiOutlineMail />
+                    </a>
                   </div>
                   <div className="p-6 rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110 ease-in duration-300">
-                    <BsFillPersonLinesFill />
+                    <Link href="#skills">
+                      <BsFillPersonLinesFill />
+                    </Link>
                   </div>
                 </div>
               </div>

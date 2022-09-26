@@ -1,16 +1,17 @@
-import SkillItem from "../Skills/SkillItem";
+import SkillItem from '../Skills/SkillItem';
 
 const Skills = () => {
   const skills = [
-    "html",
-    "css",
-    "tailwind",
-    "javascript",
-    "typescript",
-    "react",
-    "nextjs",
-    "prisma",
-    "github",
+    'html',
+    'css',
+    'tailwind',
+    'javascript',
+    'typescript',
+    'react',
+    'nestjs',
+    'nextjs',
+    'prisma',
+    'github',
   ];
 
   return (

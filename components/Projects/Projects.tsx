@@ -10,28 +10,16 @@ export interface Project {
 const Projects = () => {
   const projects: Project[] = [
     {
-      name: "crypto",
-      title: "Crypto App",
-      technology: "NextJS",
-      url: "/crypto",
-    },
-    {
       name: "netflix",
       title: "Netflix Clone",
       technology: "NextJS",
       url: "/netflix",
     },
     {
-      name: "property",
-      title: "Property Finder",
-      technology: "NextJS",
-      url: "/property",
-    },
-    {
-      name: "twitch",
-      title: "Twitch Clone",
-      technology: "ReactJS",
-      url: "/twitch",
+      name: "accountseller",
+      title: "Video Game Account Selling Website",
+      technology: "React",
+      url: "/accountseller",
     },
   ];
 
