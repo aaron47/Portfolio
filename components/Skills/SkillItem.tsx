@@ -9,7 +9,7 @@ const SkillItem: React.FC<Props> = ({ skill }) => {
     <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
       <div className="items-center justify-center grid grid-cols-2 gap-4">
         <div className="m-auto">
-          <img
+          <Image
             src={`/../public/assets/skills/${skill}.png`}
             alt="/"
             width={64}
