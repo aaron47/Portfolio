@@ -1,6 +1,6 @@
-import Image from "next/image";
-import Link from "next/link";
-import { RiRadioButtonFill } from "react-icons/ri";
+import Image from 'next/image';
+import Link from 'next/link';
+import { RiRadioButtonFill } from 'react-icons/ri';
 
 const accountseller = () => {
   return (
@@ -9,7 +9,7 @@ const accountseller = () => {
         <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80 z-10" />
         <Image
           className="absolute z-1"
-          src="/../public/assets/projects/accountseller.jpg"
+          src="/../public/projects/accountseller.jpg"
           alt="PropertyProjectImage"
           layout="fill"
           objectFit="cover"
