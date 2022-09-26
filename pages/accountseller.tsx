@@ -9,7 +9,7 @@ const accountseller = () => {
         <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80 z-10" />
         <Image
           className="absolute z-1"
-          src="/../public/accountseller.jpg"
+          src="/accountseller.jpg"
           alt="PropertyProjectImage"
           layout="fill"
           objectFit="cover"
