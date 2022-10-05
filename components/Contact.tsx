@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import Link from 'next/link';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 import emailjs from '@emailjs/browser';
-import { MutableRefObject, useRef } from 'react';
+import { MutableRefObject, useRef, useState } from 'react';
 
 function Contact() {
   const form = useRef<HTMLFormElement>() as MutableRefObject<HTMLFormElement>;
@@ -17,7 +17,28 @@ function Contact() {
       form.current,
       'arBUKtdaXbgkzqZx8'
     );
+
+    setNameInput('');
+    setPhoneNumberInput('');
+    setEmailInput('');
+    setSubjectInput('');
+    setMessageInput('');
+    setIsMessageSent(true);
+
+    setTimeout(() => {
+      setIsMessageSent(false);
+    }, 5000);
   };
+
+  // input form values control
+  const [nameInput, setNameInput] = useState('');
+  const [phnoneNumberInput, setPhoneNumberInput] = useState('');
+  const [emailInput, setEmailInput] = useState('');
+  const [subjectInput, setSubjectInput] = useState('');
+  const [messageInput, setMessageInput] = useState('');
+
+  // Success message control
+  const [isMessageSent, setIsMessageSent] = useState(false);
 
   return (
     <div id="contact" className="w-full lg:h-screen">
@@ -85,14 +106,20 @@ function Contact() {
                       type="text"
                       name="from_name"
                       className="border-2 rounded-lg p-3 flex border-gray-300"
+                      value={nameInput}
+                      onChange={(e) => setNameInput(e.target.value)}
+                      required
                     />
                   </div>
 
                   <div className="flex flex-col">
                     <label className="upper text-sm py-2 ">Phone Number</label>
                     <input
+                      name="phone_number"
                       type="text"
                       className="border-2 rounded-lg p-3 flex border-gray-300"
+                      value={phnoneNumberInput}
+                      onChange={(e) => setPhoneNumberInput(e.target.value)}
                     />
                   </div>
                 </div>
@@ -103,6 +130,9 @@ function Contact() {
                     type="email"
                     name="user_email"
                     className="border-2 rounded-lg p-3 flex border-gray-300"
+                    value={emailInput}
+                    onChange={(e) => setEmailInput(e.target.value)}
+                    required
                   />
                 </div>
                 <div className="flex flex-col py-2">
@@ -111,6 +141,9 @@ function Contact() {
                     name="subject"
                     type="text"
                     className="border-2 rounded-lg p-3 flex border-gray-300"
+                    value={subjectInput}
+                    onChange={(e) => setSubjectInput(e.target.value)}
+                    required
                   />
                 </div>
                 <div className="flex flex-col py-2">
@@ -119,12 +152,21 @@ function Contact() {
                     name="message"
                     rows={10}
                     className="border-2 rounded-lg p-3 flex border-gray-300"
+                    value={messageInput}
+                    onChange={(e) => setMessageInput(e.target.value)}
+                    required
                   />
                 </div>
 
                 <button type="submit" className="w-full p-4 text-gray-100 mt-4">
                   Submit Message
                 </button>
+
+                {isMessageSent && (
+                  <p className="italic text-green-500 text-2xl mt-5">
+                    Your email has been sent successfully.
+                  </p>
+                )}
               </form>
             </div>
           </div>
