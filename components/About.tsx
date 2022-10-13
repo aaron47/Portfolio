@@ -10,11 +10,11 @@ const About = () => {
           <p className="text-gray-600">
             I have spent the last year or so learning web development, in the
             beginning, I started with basic HTML, CSS and Javascript and worked
-            on a few simple projects, then I moved on to Typescript and React,
-            and stuck to them ever since, in between those lines, I tried
-            working with other frameworks such as Angular and Vue, but haven't
-            stuck to them. So I decided to continue in the React way, which I am
-            most comfortable and confident in to build stuff quickly and
+            on a few simple projects, then I moved on to Typescript and React
+            and Angular, and stuck to them ever since, in between those lines, I
+            tried working with other frameworks like Vue, but haven't stuck to
+            them. So I decided to continue in the React and Angular way, which I
+            am most comfortable and confident in to build stuff quickly and
             efficiently, and continued to learn NextJS, and backend technologies
             such as NestJS to build well organized, structured and secure REST
             APIs, which is where I am now. Other than coding, I can speak 4

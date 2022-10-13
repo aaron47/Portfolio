@@ -1,4 +1,4 @@
-import ProjectItem from "./ProjectItem";
+import ProjectItem from './ProjectItem';
 
 export interface Project {
   name: string;
@@ -10,16 +10,22 @@ export interface Project {
 const Projects = () => {
   const projects: Project[] = [
     {
-      name: "netflix",
-      title: "Netflix Clone",
-      technology: "NextJS",
-      url: "/netflix",
+      name: 'netflix',
+      title: 'Netflix Clone',
+      technology: 'NextJS',
+      url: '/netflix',
     },
     {
-      name: "accountseller",
-      title: "Video Game Account Selling Website",
-      technology: "React",
-      url: "/accountseller",
+      name: 'accountseller',
+      title: 'Video Game Account Selling Website',
+      technology: 'React',
+      url: '/accountseller',
+    },
+    {
+      name: 'gecko',
+      title: 'A Crypto Application Frontend using the Gecko API',
+      technology: 'Angular',
+      url: '/gecko',
     },
   ];
 

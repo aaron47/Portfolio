@@ -8,9 +8,9 @@ const Skills = () => {
     'javascript',
     'typescript',
     'react',
+    'angular',
     'nestjs',
     'nextjs',
-    'prisma',
     'github',
   ];
 
