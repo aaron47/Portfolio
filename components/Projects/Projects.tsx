@@ -11,14 +11,14 @@ const Projects = () => {
   const projects: Project[] = [
     {
       name: 'netflix',
-      title: 'Netflix Clone',
-      technology: 'NextJS',
+      title: 'Netflix Clone using React Typescript and NestJS',
+      technology: 'React Typescript',
       url: '/netflix',
     },
     {
       name: 'accountseller',
-      title: 'Video Game Account Selling Website',
-      technology: 'React',
+      title: 'Video Game Account Selling Website using React and TailwindCSS',
+      technology: 'React Typescript',
       url: '/accountseller',
     },
     {
@@ -26,6 +26,12 @@ const Projects = () => {
       title: 'A Crypto Application Frontend using the Gecko API',
       technology: 'Angular',
       url: '/gecko',
+    },
+    {
+      name: 'booker',
+      title: 'A bookmark App using Angular and NestJS',
+      technology: 'Angular',
+      url: '/booker',
     },
   ];
 
