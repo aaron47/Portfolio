@@ -20,7 +20,8 @@ const Navbar = () => {
       router.asPath === '/twitch' ||
       router.asPath === '/netflix' ||
       router.asPath === '/accountseller' ||
-      router.asPath === '/gecko'
+      router.asPath === '/gecko' ||
+      router.asPath === '/booker'
     ) {
       setNavBg('transparent');
       setLinkColor('#ecf0f3');
@@ -130,9 +131,7 @@ const Navbar = () => {
               </div>
             </div>
             <div className="my-4 border-b border-gray-300 ">
-              <p className="w-[85%] md:w-[90%] py-4">
-                Let's build my portfolio finally
-              </p>
+              <p className="w-[85%] md:w-[90%] py-4">Welcome to my Portfolio</p>
             </div>
           </div>
 
