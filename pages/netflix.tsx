@@ -24,14 +24,22 @@ const netflix = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            A simple Netflix App I created using NextJS for the front end and
-            Server Side Rendering along with TailwindCSS for the styling, as
-            well as practicing building a secure and working backend using
-            NestJS{' '}
+            A simple Netflix App I created using React for the frontend along
+            with TailwindCSS for the styling, as well as practicing building a
+            secure and working backend using NestJS{' '}
           </p>
-          <button className="px-2 py-2 mt-4">
-            <a href="https://github.com/aaron47/Netflix-Clone-NestJS">Code</a>
-          </button>
+          <div className="space-x-2">
+            <button className="px-2 py-2 mt-4">
+              <a href="https://github.com/aaron47/NetflixClone-React-NestJS-Frontend">
+                Frontend Code
+              </a>
+            </button>
+            <button className="px-2 py-2 mt-4">
+              <a href="https://github.com/aaron47/NetflixClone-React-NestJS-Backend">
+                Backend Code
+              </a>
+            </button>
+          </div>
         </div>
 
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
