@@ -39,7 +39,7 @@ const Main = () => {
               </Link>
             </div>
             <div className="p-6 rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110 ease-in duration-300">
-              <Link href="#skills">
+              <Link href="https://docs.google.com/document/d/1AI3zP5MVBbuQEVuNZgpN-FJVYmuY30tUGrgvUSfPEYk/edit#">
                 <BsFillPersonLinesFill />
               </Link>
             </div>
