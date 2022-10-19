@@ -21,7 +21,8 @@ const Navbar = () => {
       router.asPath === '/netflix' ||
       router.asPath === '/accountseller' ||
       router.asPath === '/gecko' ||
-      router.asPath === '/booker'
+      router.asPath === '/booker' ||
+      router.asPath === '/ecommerce'
     ) {
       setNavBg('transparent');
       setLinkColor('#ecf0f3');

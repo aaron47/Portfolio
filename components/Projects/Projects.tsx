@@ -33,6 +33,12 @@ const Projects = () => {
       technology: 'Angular',
       url: '/booker',
     },
+    {
+      name: 'ecommerce',
+      title: 'Ecommerce Website',
+      technology: 'Angular',
+      url: '/ecommerce',
+    },
   ];
 
   return (
