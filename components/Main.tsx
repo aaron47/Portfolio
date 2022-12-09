@@ -23,26 +23,29 @@ const Main = () => {
           </p>
 
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
-            <div className="p-6 rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110 ease-in duration-300">
-              <a href="https://www.linkedin.com/in/aaron-borgi-5744a7236/">
+            <a href="https://www.linkedin.com/in/aaron-borgi-5744a7236/">
+              <div className="p-6 rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110 ease-in duration-300">
                 <FaLinkedinIn />
-              </a>
-            </div>
-            <div className="p-6 rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110 ease-in duration-300">
-              <a href="https://github.com/aaron47">
+              </div>
+            </a>
+
+            <a href="https://github.com/aaron47">
+              <div className="p-6 rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110 ease-in duration-300">
                 <FaGithub />
-              </a>
-            </div>
-            <div className="p-6 rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110 ease-in duration-300">
-              <Link href="#contact">
+              </div>
+            </a>
+
+            <Link href="#contact">
+              <div className="p-6 rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110 ease-in duration-300">
                 <AiOutlineMail />
-              </Link>
-            </div>
-            <div className="p-6 rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110 ease-in duration-300">
-              <Link href="https://docs.google.com/document/d/1AI3zP5MVBbuQEVuNZgpN-FJVYmuY30tUGrgvUSfPEYk/edit#">
+              </div>
+            </Link>
+
+            <a href="https://docs.google.com/document/d/1AI3zP5MVBbuQEVuNZgpN-FJVYmuY30tUGrgvUSfPEYk/edit#">
+              <div className="p-6 rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110 ease-in duration-300">
                 <BsFillPersonLinesFill />
-              </Link>
-            </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>

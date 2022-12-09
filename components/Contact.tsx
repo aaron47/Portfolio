@@ -4,12 +4,12 @@ import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import Link from 'next/link';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 import emailjs from '@emailjs/browser';
-import { MutableRefObject, useRef, useState } from 'react';
+import { FormEvent, MutableRefObject, useRef, useState } from 'react';
 
 function Contact() {
   const form = useRef<HTMLFormElement>() as MutableRefObject<HTMLFormElement>;
 
-  const sendEmail = (e: any) => {
+  const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     emailjs.sendForm(
       'service_1y2ptv9',
@@ -68,28 +68,31 @@ function Contact() {
                 </p>
               </div>
               <div>
-                <p className="uppercase pt-8">Connect With Me</p>
+                <p className="pt-8">Connect with me</p>
                 <div className="flex items-center justify-between py-4">
-                  <div className="p-6 rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110 ease-in duration-300">
-                    <a href="https://www.linkedin.com/in/aaron-borgi-5744a7236/">
+                  <a href="https://www.linkedin.com/in/aaron-borgi-5744a7236/">
+                    <div className="p-6 rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110 ease-in duration-300">
                       <FaLinkedinIn />
-                    </a>
-                  </div>
-                  <div className="p-6 rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110 ease-in duration-300">
-                    <a href="https://github.com/aaron47">
+                    </div>
+                  </a>
+
+                  <a href="https://github.com/aaron47">
+                    <div className="p-6 rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110 ease-in duration-300">
                       <FaGithub />
-                    </a>
-                  </div>
-                  <div className="p-6 rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110 ease-in duration-300">
-                    <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfrtXFzzkBwZpcvXmLRswxRjJCkKDpBvTVfGqxnJjGrCzwJTHSwtJwjdFkVxhRsspsdPVV">
+                    </div>
+                  </a>
+
+                  <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfrtXFzzkBwZpcvXmLRswxRjJCkKDpBvTVfGqxnJjGrCzwJTHSwtJwjdFkVxhRsspsdPVV">
+                    <div className="p-6 rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110 ease-in duration-300">
                       <AiOutlineMail />
-                    </a>
-                  </div>
-                  <div className="p-6 rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110 ease-in duration-300">
-                    <Link href="#skills">
+                    </div>
+                  </a>
+
+                  <Link href="#skills">
+                    <div className="p-6 rounded-full shadow-lg cursor-pointer shadow-gray-400 hover:scale-110 ease-in duration-300">
                       <BsFillPersonLinesFill />
-                    </Link>
-                  </div>
+                    </div>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -98,7 +101,7 @@ function Contact() {
           {/* right */}
           <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
             <div className="p-4">
-              <form ref={form} onSubmit={sendEmail}>
+              <form ref={form} onSubmit={(e) => sendEmail(e)}>
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                   <div className="flex flex-col">
                     <label className="upper text-sm py-2">Name</label>
@@ -158,7 +161,11 @@ function Contact() {
                   />
                 </div>
 
-                <button type="submit" className="w-full p-4 text-gray-100 mt-4">
+                <button
+                  disabled={isMessageSent}
+                  type="submit"
+                  className="w-full p-4 text-gray-100 mt-4"
+                >
                   Submit Message
                 </button>
 
