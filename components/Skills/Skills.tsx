@@ -5,13 +5,12 @@ const Skills = () => {
     'html',
     'css',
     'tailwind',
-    'javascript',
     'typescript',
     'react',
     'angular',
     'nestjs',
-    'nextjs',
-    'github',
+    'csharp',
+    'dotnetcore'
   ];
 
   return (

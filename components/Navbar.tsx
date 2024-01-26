@@ -11,27 +11,6 @@ const Navbar = () => {
   const [navBg, setNavBg] = useState('#ecf0f3');
   const [linkColor, setLinkColor] = useState('#1f2937');
 
-  const router = useRouter();
-
-  useEffect(() => {
-    if (
-      router.asPath === '/property' ||
-      router.asPath === '/crypto' ||
-      router.asPath === '/twitch' ||
-      router.asPath === '/netflix' ||
-      router.asPath === '/accountseller' ||
-      router.asPath === '/gecko' ||
-      router.asPath === '/booker' ||
-      router.asPath === '/ecommerce'
-    ) {
-      setNavBg('transparent');
-      setLinkColor('#ecf0f3');
-    } else {
-      setNavBg('#ecf0f3');
-      setLinkColor('#1f2937');
-    }
-  }, [router]);
-
   function handleNav() {
     setNav((prevState) => !prevState);
   }
@@ -91,7 +70,7 @@ const Navbar = () => {
                 onClick={() => setNav(false)}
                 className="ml-10 text-sm uppercase hover:border-b"
               >
-                Projects
+                Professional Experience
               </li>
             </Link>
             <Link href="/#contact">
@@ -148,7 +127,7 @@ const Navbar = () => {
                 <li className="py-4 text-sm">Skills</li>
               </Link>
               <Link href="/#projects">
-                <li className="py-4 text-sm">Projects</li>
+                <li className="py-4 text-sm">Professional Experience</li>
               </Link>
               <Link href="/#contact">
                 <li className="py-4 text-sm">Contact</li>

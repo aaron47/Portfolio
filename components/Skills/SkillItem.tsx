@@ -13,7 +13,7 @@ const SkillItem: React.FC<Props> = ({ skill }) => {
         </div>
 
         <div className="flex flex-col items-center justify-center">
-          <h3>{skill.toUpperCase()}</h3>
+          {skill === 'dotnetcore' ? <h3>ASP .NET CORE</h3> :  <h3>{skill.toUpperCase()}</h3>}
         </div>
       </div>
     </div>

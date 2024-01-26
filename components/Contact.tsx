@@ -12,7 +12,7 @@ function Contact() {
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     emailjs.sendForm(
-      'service_1y2ptv9',
+      'service_nm6ponv',
       'template_zra5k9q',
       form.current,
       'arBUKtdaXbgkzqZx8'
@@ -61,7 +61,7 @@ function Contact() {
 
               <div>
                 <h2 className="py-2">Aaron Borgi</h2>
-                <p>Front-end Developer</p>
+                <p>Fullstack Web Developer</p>
                 <p className="py-4">
                   I am available for freelance or full/part-time positions.
                   Contact me and let's talk. :)
