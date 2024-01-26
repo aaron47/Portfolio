@@ -9,7 +9,7 @@ const Home = () => {
 	return (
 		<>
 			<Head>
-				<title>Aaron - Frontend Developer</title>
+				<title>Aaron - Fullstack Web Developer</title>
 				<meta name="description" content="Welcome to my resume website" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
