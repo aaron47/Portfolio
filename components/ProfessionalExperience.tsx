@@ -77,6 +77,33 @@ const ProfessionalExperience = () => {
 								</li>
 							</ul>
 						</li>
+						<li className="p-6 shadow-xl rounded-xl">
+							<h2 className="text-xl font-semibold text-gray-700">
+								Full Stack Developer Internship (End of Study Project) - Axam
+							</h2>
+							<p className="text-gray-600">January 2024 - April 2024</p>
+
+							<ul className="list-disc">
+								<li>
+									Design and creation of an intelligent search system using
+									Elasticsearch, an SBERT model and ASP .NET Core 8
+								</li>
+								<li>
+									Usage of the CQRS pattern and Clean Architecture with ASP .NET
+									Core 8.
+								</li>
+								<li>
+									Implementation of several search methods using Artificial
+									Intelligence to perform sentence translation and encoding
+								</li>
+								<li>Vector search integration in Elasticsearch</li>
+								<li>
+									Hosted the system in Azure Cloud, and the model in an Azure
+									Virtual Machine.
+								</li>
+								<li>Usage of Azure Key Vault to store secret values.</li>
+							</ul>
+						</li>
 					</ol>
 				</div>
 			</div>
